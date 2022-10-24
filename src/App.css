@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.App{
+  background-color: rgb(213, 109, 109);
+  display:flex;
   flex-direction: column;
+  justify-content:center;
   align-items: center;
+  width:100vw;
+  height:100vh;
+  border:1px dashed rgb(34, 27, 13);
+  padding:0;
+  margin:0;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  background-color:rgb(254, 176, 9);
+  width:100vw;
+  height:50px;
+  position:fixed;
+  column-gap:900px;
+  top: 0;
+  /* left:500px; */
+  /* padding:10px; */
+  /* z-index:-1; */
+}
+h1{
+  color:black;
+  font-size: large;
+}
+.links{
+  display:flex;
+  justify-content:space-between;
+  column-gap: 20px;
+}
+.link{
+  color:rgb(211, 82, 27);
+  font-size: large;
+  text-decoration: none;
+}
+.movie img{
+  width:200px;
+  height:300px;
+}
+.movie{
+  width:50vw;
+  border:1px dashed orangered;
+  height:auto;
+  display:flex;
+  flex-direction:column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  align-items: center;
+  background-color: whitesmoke;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.routes section{
+  background-color: purple;
+}
+.articles{
+  width:100vw;
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: brown;
+  align-items:center;
+  border:2px dotted red;
+  row-gap:10px;
+  column-gap:10px;
+}
+.articles img{
+  width:120px;
+  height:180px;
+}
+.container{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  width:100vw;
+  height:75vh;
+  /* top:250px; */
+  border:3px dashed blue;
+  margin:0;
+}
+.search_form{
+  width:100vw;
+  position:fixed;
+  top:60px;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 10px;
+}
+#header-search{
+  width:75vw;
+}
+.routes{
+  width:100vw;
+  margin:0;
+  padding:0;
+  border:1px dashed green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articles article{
+  width:auto;
+  /* margin:0px;
+  padding:0px; */
+  height:auto;
+  border:2px dotted purple;
+  display:flex;
+  flex-direction: row;
+  background-color: white;
+  column-gap: 15px;
+}
+.searchForm{
+  width:100vw;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  column-gap: 10px;
+}
+.searchForm form{
+  display:flex;
+  flex-direction:row;
+  column-gap: 10px;
+}
+#lang{
+  width:15vw;
+}
+.moviesList{
+  width:auto;
+  height:auto;
+  background-color: yellowgreen;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info{
+  width:160px;
+  height:180px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.date_note{
+  display:flex;
+  flex-direction: row;
+  font-size: 0.7rem;
+  color:grey;
+  column-gap: 5px;
+  border: 1px dotted rgb(174, 174, 6);
+}
+.card-btn{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  column-gap:50px;
+  border:1px dotted grey;
+}
+.details-button, .back-home{
+  background-color:rgb(254, 176, 9);
+  border-radius: 5px;
+  border-color:rgb(254, 148, 9);
+}
+.details-button a, .back-home a{
+  color:black;
+  text-decoration: none;
+}
+.add-button{
+  background-color: rgb(1, 94, 255);
+  border-radius:5px;
+  border-color:rgb(0, 67, 183);
+  color:whitesmoke;
+}
+.resume{
+  text-align: justify;
+}
+.pagination{
+  display:flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 5px;
+}
+.page-num{
+  background-color: rgb(254, 176, 9);
+  border:1px solid rgb(205, 123, 7);
+  cursor:pointer;
+  border-radius: 3px;
+  padding:8px 15px;
+  color:white;
+}
+.num-active{
+  background-color: rgb(254, 176, 9);
+  border:2px solid rgb(255, 106, 0);
+}
+.page-num:hover{
+  background-color: rgb(254, 140, 9);
+  color:white;
+}
+.movies{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
